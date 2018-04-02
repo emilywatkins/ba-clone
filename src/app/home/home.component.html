@@ -2,6 +2,6 @@
   home works!
 </p>
 
-<div *ngFor="let recipe of recipes" >
+<div *ngFor="let recipe of recipes" (click)="goToDetail(recipe)">
   <h3>{{recipe.title}} - {{recipe.description}}</h3>
 </div>
