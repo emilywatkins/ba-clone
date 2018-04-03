@@ -8,7 +8,7 @@ export class RecipeService {
   recipes;
 
   constructor(private database: AngularFireDatabase) {
-    this.recipes = database.list('questions');
+    this.recipes = database.list('recipes');
   }
 
   getRecipes() {
