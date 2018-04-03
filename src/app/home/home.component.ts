@@ -1,23 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { Recipe } from '../recipe.model';
 import { Router } from '@angular/router';
+import { RecipeService } from '../recipe.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  providers: [RecipeService]
 })
 export class HomeComponent implements OnInit {
+  recipes: FirebaseListObservable<any[]>;
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private recipeService: RecipeService
+  ) { }
 
   ngOnInit() {
+    this.recipes = this.recipeService.getRecipes();
   }
-
-  recipes: Recipe[] = [
-    new Recipe("Title: Pigs in a blanket", "Description: The only meat + bread you'll ever need", "Body: put a hotdog in some dough and bake it.", "Image url: some great shot.jpg", 1),
-    new Recipe("Title2", "Description2", "Body2", "Image2", 2)
-  ];
 
   goToDetail(clickedRecipe: Recipe) {
     this.router.navigate(['recipes', clickedRecipe.id]);

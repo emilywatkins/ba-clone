@@ -1,20 +1,20 @@
 { "recipes": [{
-    "title": "",
-    "description": "",
-    "body": "",
-    "image": "",
+    "title": "title1",
+    "description": "desc1",
+    "body": "body1",
+    "image": "img1",
     "id": "1"
     }, {
-    "title": "",
-    "description": "",
-    "body": "",
-    "image": "",
+    "title": "title2",
+    "description": "desc2",
+    "body": "body2",
+    "image": "img2",
     "id": "2"
     }, {
-    "title": "",
-    "description": "",
-    "body": "",
-    "image": "",
+    "title": "title3",
+    "description": "desc3",
+    "body": "body3",
+    "image": "img3",
     "id": "3"
   }]
 }
