@@ -18,7 +18,7 @@ To install dependencies:
 
 `$ npm install`  
 
--Firebase instructions-
+-Firebase instructions: (note to self) looking for an example. can a user access my project's database somehow? or do i need to set up a sample.json file for them to access? not sure what this will look like, but will ultimately be solved once deployed-
 
 To run program and open in browser:
 
@@ -42,14 +42,9 @@ Pipes will be incorporated in order to show featured articles, which will displa
 
 ## Technologies Used
 
-* JavaScript
-* JQuery
-* HTML
-* Webpack
-
-## Known Bugs
-When the doctor's practice does not have a website, "undefined" is returned.  
-Accepting new patients returns 'true' or 'false', ideally would return 'yes' or 'no'.
+* Angular
+* Typescript
+* Firebase
 
 ## License
 
