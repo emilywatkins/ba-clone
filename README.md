@@ -1,27 +1,58 @@
-# Ba
+# Bon App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+#### Exercise in Angular, Typescript, and Firebase 4.6.18
 
-## Development server
+#### Emily Watkins
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+This application is a clone of the Bon Appetit website (https://www.bonappetit.com/). The home page has a fairly simple style and uses an interesting template for displaying featured articles and recipes, which I hope to replicate in applying CRUD functionality to an admin of the site.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup
 
-## Build
+This page will be deployed to a live site, but in the meantime, here are the setup instructions.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Clone this repository and navigate to root directory.
 
-## Running unit tests
+To install dependencies:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`$ npm install`  
 
-## Running end-to-end tests
+-Firebase instructions-
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+To run program and open in browser:
 
-## Further help
+`$ ng serve --open`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Functionality
+
+Current:
+A non-admin user can navigate to the site, click on a displayed recipe, and view that recipe.
+
+Upcoming:
+An admin user will be able to log in from the home page and have access to navigation unique from a non-admin user.
+
+An admin user will have access to CRUD functionality after logging in. They will be able to create, edit, delete recipes or articles.
+
+Upon creation, the recipes or articles will be formatted to render in the html with an image, title, and description.
+
+Pipes will be incorporated in order to show featured articles, which will display on the home page, or to display similar articles on grouped pages such as most popular, healthy, regional, etc.
+
+
+## Technologies Used
+
+* JavaScript
+* JQuery
+* HTML
+* Webpack
+
+## Known Bugs
+When the doctor's practice does not have a website, "undefined" is returned.  
+Accepting new patients returns 'true' or 'false', ideally would return 'yes' or 'no'.
+
+## License
+
+Licensed under the MIT License.
+
+Copyright (c) 2018 Emily Watkins
