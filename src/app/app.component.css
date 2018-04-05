@@ -1,0 +1,14 @@
+.navbar.navbar-default.navbar-static-top {
+  background: black;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar.navbar-default.navbar-static-top h2 {
+  color: white;
+  margin: auto 0;
+}
