@@ -5,10 +5,11 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
+import { routing } from './app.routing';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { routing } from './app.routing';
 import { AdminComponent } from './admin/admin.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 
@@ -33,7 +34,8 @@ export const firebaseConfig = {
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    FormsModule
+    FormsModule,
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
