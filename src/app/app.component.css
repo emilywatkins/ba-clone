@@ -1,16 +1,12 @@
 .navbar.navbar-default.navbar-static-top {
-  background: black;
-  width: 100%;
-  height: 5rem;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* text-align: center; */
+  /* background: black; */
 }
 
-.navbar.navbar-default.navbar-static-top .container .navbar-brand {
-  color: white;
+.navbar * {
+  border: solid black;
 }
 
-.navbar.navbar-default.navbar-static-top .right {
+.navbar-brand h2{
+  justify-content: center;
+  line-height: 50px;
 }
