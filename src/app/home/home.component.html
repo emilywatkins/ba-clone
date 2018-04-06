@@ -4,4 +4,7 @@
 
 <div *ngFor="let recipe of recipes | async"  (click)="goToDetail(recipe)">
   <h3>{{recipe.title}} - {{recipe.description}}</h3>
+  <div *ngIf="currentRoute === '/admin'">
+    <app-edit-recipe></app-edit-recipe>
+  </div>
 </div>

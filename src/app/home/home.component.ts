@@ -13,6 +13,7 @@ import { AuthenticationService } from '../authentication.service';
 })
 export class HomeComponent implements OnInit {
   recipes: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
   user;
 
   constructor(
@@ -37,8 +38,8 @@ export class HomeComponent implements OnInit {
     this.recipes = this.recipeService.getRecipes();
   }
 
-  goToDetail(clickedRecipe: Recipe) {
-    // this.router.navigate(['recipes', clickedRecipe.id]);
+  goToDetail(clickedRecipe) {
+    this.router.navigate(['recipes', clickedRecipe.$key]);
   };
 
 }
