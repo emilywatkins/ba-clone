@@ -13,6 +13,12 @@
   display: block;
   height: 5rem;
   color: #fff;
+  list-style-type: none;
+}
+
+.navbar-text.navbar-right li a:hover {
+  text-decoration: none;
+  cursor: default;
 }
 
 .navbar-text.navbar-left a {

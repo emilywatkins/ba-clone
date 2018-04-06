@@ -10,9 +10,14 @@
       </ul>
     </div>
 
-    <div class="navbar-text navbar-right">
-      <a href="#">login</a>
-    </div>
+    <ul class="navbar-text navbar-right">
+      <li *ngIf="isLoggedIn">
+        <a (click)="logout()">Log out</a>
+      </li>
+      <li *ngIf ="!isLoggedIn">
+        <a (click)="login()">Log in</a>
+      </li>
+    </ul>
   </div>
 </nav>
 
