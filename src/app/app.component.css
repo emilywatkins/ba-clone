@@ -1,31 +1,29 @@
 .navbar.navbar-default {
-  /* background: black; */
-}
-
-.navbar * {
-  border: solid black;
+  background: black;
 }
 
 .navbar-text.navbar-right a {
-  color: black;
+  color: white;
+}
+
+.navbar-text.navbar-right {
+  position: absolute;
+  top: 0;
+  right: 5rem;
+  display: block;
+  height: 5rem;
+  color: #fff;
 }
 
 .navbar-text.navbar-left a {
-  color: black;
+  color: white;
 }
 
-.navbar-inner ul li a {
-  color: black;
+.navbar.center .navbar-inner {
+  display: block;
 }
 
-.navbar-inner {
-  float: none;
-  display:inline-block;
-  vertical-align: middle;
-  height: 50px;
-  align-items: center;
-}
-
-.navbar-inner .nav {
-
+.navbar.center .navbar-inner .nav {
+  display: inline-block;
+  width: 115px;
 }
