@@ -25,6 +25,14 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  login() {
+    this.authService.login();
+  }
+
+  logout() {
+    this.authService.logout();
+  }
+
   ngOnInit() {
     this.recipes = this.recipeService.getRecipes();
   }
