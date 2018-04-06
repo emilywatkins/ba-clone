@@ -39,7 +39,10 @@ export const firebaseConfig = {
     FormsModule,
     AngularFireAuthModule,
   ],
-  providers: [AuthGuard, AuthenticationService],
+  providers: [
+    AuthGuard,
+    AuthenticationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
