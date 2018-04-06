@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
+import { EditRecipeComponent } from './edit-recipe/edit-recipe.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,6 +29,7 @@ export const firebaseConfig = {
     HomeComponent,
     AdminComponent,
     RecipeDetailComponent,
+    EditRecipeComponent,
 
   ],
   imports: [
