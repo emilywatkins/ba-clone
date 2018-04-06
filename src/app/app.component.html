@@ -1,11 +1,14 @@
 <nav class="navbar navbar-default navbar-static-top">
-  <div class="container">
+  <div class="container-fluid">
     <div class="navbar-text navbar-left">
-      <a class="hamburger" href="#"> <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
+      <a href="#"> <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
     </div>
 
-    <a class="navbar-brand" routerLink=""><h2>bon appetit</h2></a>
-
+    <div class="navbar-inner">
+      <ul class="nav navbar-nav">
+        <li><a routerLink="">bon appetit</a></li>
+      </ul>
+    </div>
 
     <div class="navbar-text navbar-right">
       <a href="#">login</a>

@@ -1,4 +1,4 @@
-.navbar.navbar-default.navbar-static-top {
+.navbar.navbar-default {
   /* background: black; */
 }
 
@@ -6,7 +6,26 @@
   border: solid black;
 }
 
-.navbar-brand h2{
-  justify-content: center;
-  line-height: 50px;
+.navbar-text.navbar-right a {
+  color: black;
+}
+
+.navbar-text.navbar-left a {
+  color: black;
+}
+
+.navbar-inner ul li a {
+  color: black;
+}
+
+.navbar-inner {
+  float: none;
+  display:inline-block;
+  vertical-align: middle;
+  height: 50px;
+  align-items: center;
+}
+
+.navbar-inner .nav {
+
 }
