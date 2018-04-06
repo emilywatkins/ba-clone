@@ -3,20 +3,27 @@ import { Recipe } from '../recipe.model';
 import { Router } from '@angular/router';
 import { RecipeService } from '../recipe.service';
 import { FirebaseListObservable } from 'angularfire2/database';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  providers: [RecipeService]
+  providers: [RecipeService, AuthenticationService]
 })
 export class HomeComponent implements OnInit {
   recipes: FirebaseListObservable<any[]>;
+  user;
 
   constructor(
     private router: Router,
-    private recipeService: RecipeService
-  ) { }
+    private recipeService: RecipeService,
+    public authService: AuthenticationService
+  ) {
+    this.authService.user.subscribe(user =>  {
+      console.log(user);
+    });
+  }
 
   ngOnInit() {
     this.recipes = this.recipeService.getRecipes();

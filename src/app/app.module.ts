@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { routing } from './app.routing';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AuthGuard } from './auth-guard.service';
-import { AuthenticationService } from './authentication/authentication.service';
+import { AuthenticationService } from './authentication.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
