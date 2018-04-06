@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.navbar.navbar-default.navbar-static-top h2 {
+.navbar.navbar-default.navbar-static-top a {
   color: white;
   margin: auto 0;
 }
