@@ -1,3 +1,27 @@
-<p>
-  admin works!
-</p>
+<h3>Add New Recipe</h3>
+<div>
+  <div>
+    <label>Recipe Title:</label>
+    <br>
+    <input #newTitle>
+  </div>
+
+  <div>
+    <label>Recipe Description:</label>
+    <br>
+    <input #newDescription>
+  </div>
+
+  <div>
+    <label>Recipe Body:</label>
+    <br>
+    <input #newBody>
+  </div>
+
+  <div>
+    <label>Recipe Image:</label>
+    <br>
+    <input #newImage>
+  </div>
+</div>
+<button (click)="submitForm(newTitle.value, newDescription.value, newBody.value, newImage.value); newTitle.value=''; newDescription.value=''; newBody.value=''; newImage.value=''">Add</button>

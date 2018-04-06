@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit {
   }
 
   goToDetail(clickedRecipe: Recipe) {
-    this.router.navigate(['recipes', clickedRecipe.id]);
+    // this.router.navigate(['recipes', clickedRecipe.id]);
   };
 
 }

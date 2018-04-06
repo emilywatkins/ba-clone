@@ -4,7 +4,6 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class RecipeService {
-
   recipes;
 
   constructor(private database: AngularFireDatabase) {
@@ -13,6 +12,10 @@ export class RecipeService {
 
   getRecipes() {
     return this.recipes;
+  }
+
+  addRecipe(newRecipe: Recipe) {
+    this.recipes.push(newRecipe);
   }
 
   getRecipeById(recipeId: string) {
