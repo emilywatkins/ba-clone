@@ -14,7 +14,7 @@
       <li *ngIf="isLoggedIn">
         <a (click)="logout()">Log out</a>
       </li>
-      <li *ngIf ="!isLoggedIn">
+      <li *ngIf="!isLoggedIn">
         <a (click)="login()">Log in</a>
       </li>
     </ul>
@@ -27,5 +27,11 @@
   <router-outlet></router-outlet>
 </div>
 
+<div>
+  <p>public div</p>
+</div>
 
-<a routerLink="admin">admin router link</a>
+<div *ngIf="isLoggedIn" class="adminContent">
+  logged in div
+  <a routerLink="admin">admin router link</a>
+</div>
