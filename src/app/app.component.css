@@ -8,7 +8,13 @@
   text-align: center;
 }
 
-.navbar.navbar-default.navbar-static-top a {
+.navbar.navbar-default.navbar-static-top .center a h2 {
   color: white;
   margin: auto 0;
+}
+
+.navbar.navbar-default.navbar-static-top .right {
+  position: absolute;
+  display: flex;
+  justify-content: center;
 }
