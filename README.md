@@ -11,6 +11,33 @@ This application is a clone of the Bon Appetit website (https://www.bonappetit.c
 Nagivate to the below link to view and interact with the site.
 https://ba-clone.firebaseapp.com/
 
+## Setup
+
+Not necessary to interact with the app. However if you would like to run this on your local machine, follow these steps:
+
+Clone this repository: https://github.com/emilywatkins/ba-clone.git
+
+`$ npm install`
+
+`$ ng serve`
+
+Navigate to http://localhost:4200/
+
+To set up Firebase:
+* Create a Firebase account at firebase.google.com
+* Create a project and choose 'add Firebase to your web app'
+* On the left menu, under Develop, choose 'Database', click 'Rules' in the upper tab for that project, and make sure read and write are both true.
+* Create a file in the app folder of the project files to hold the Firebase API credentials (src/app/api-keys.ts) and replace the below x's with the credentials given when project was created
+
+export var masterFirebaseConfig = {  
+    apiKey: "xxxx",  
+    authDomain: "xxxx.firebaseapp.com",  
+    databaseURL: "https://xxxx.firebaseio.com",  
+    storageBucket: "xxxx.appspot.com",  
+    messagingSenderId: "xxxx"  
+  };
+
+* To set up user authentication, navigate to Develop > Authentication > Sign-in method and enable Google.
 
 ## Functionality
 
